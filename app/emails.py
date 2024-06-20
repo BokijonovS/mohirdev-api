@@ -1,7 +1,7 @@
 from django.core.mail import send_mail
 from django.conf import settings
-from .models import User
 
+'''I've set up details of email feature in this method'''
 
 def send_update_email(user_email, subject, message):
     send_mail(
