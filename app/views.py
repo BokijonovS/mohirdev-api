@@ -15,6 +15,7 @@ class CourseViewSet(viewsets.ModelViewSet):
     '''This viewset does all the work on model Course'''
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
+    permission_classes = (permissions.IsAdminUser,)
 
 
 class LessonViewSet(viewsets.ModelViewSet):
